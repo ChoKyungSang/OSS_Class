@@ -1,15 +1,223 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title?ver=1>Django Girls blog</title>
-    </head>
-    <body>
 
-        <div>
-            {{ schedules }}
-            <h1>
-                섹스킹 붐은 온다...
-            </h1>
-        </div>
+<head>
 
-    </body>
+<meta charset="UTF-8">
+
+<title>Bird Eye Schedule</title>
+
+</head>
+
+<body>
+
+    <table cellspacing="5" align="center" border="1" bordercolor="#5CD1E5"
+
+        width="550" height="600">
+
+        <p></p>
+
+        <caption>
+
+            <font size="5" face="굴림">Time Table</font>
+
+            </font>
+
+        </caption>
+
+        <tr align="center">
+
+            <td width="50"></td>
+
+            <td width="100" bgcolor="#5CD1E5">월</td>
+
+            <td width="100" bgcolor="#5CD1E5">화</td>
+
+            <td width="100" bgcolor="#5CD1E5">수</td>
+
+            <td width="100" bgcolor="#5CD1E5">목</td>
+
+            <td width="100" bgcolor="#5CD1E5">금</td>
+
+        </tr>
+
+ 
+
+        <tr align="center"  id="1">
+            <td bgcolor="#5CD1E5">1</td>
+
+            <td id="1m" >z</td>
+
+            <td ></td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+
+        </tr>
+                    {%for schedule in schedules%}
+                <script>
+                    function setHTML(id,html){
+                        obj = document.getElementById(id);
+                              /*if (obj == null) {
+                                      alert(id + ' 찾기 오류');
+                                      return;
+                                  }*/
+                        console.log(obj.innerHTML)
+                        obj.innerHTML = html;
+
+                    }
+                   setHTML("1m","{{schedule.name}}")
+                    
+     
+                  </script>
+                {%endfor%}
+
+       
+
+        <tr align="center"  id="2">
+
+            <td bgcolor="#5CD1E5">2</td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+
+        </tr>
+
+ 
+
+        <tr align="center"  id="3">
+
+            <td bgcolor="#5CD1E5">3</td>
+
+            <td ></td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+
+        </tr>
+
+ 
+
+        <tr align="center"  id="4">
+
+            <td bgcolor="#5CD1E5">4</td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+
+            <td ></td>
+
+            <td ></td>
+
+        </tr>
+
+ 
+
+        <tr align="center"  id="5">
+
+            <td bgcolor="#5CD1E5">5</td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+
+        </tr>
+
+ 
+
+        <tr align="center"  id="6">
+
+            <td bgcolor="#5CD1E5">6</td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+
+        </tr>
+
+ 
+
+        <tr align="center"  id="7">
+
+            <td bgcolor="#5CD1E5">7</td>
+
+            <td></td>
+
+            <td></td>
+            
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+
+        </tr>
+
+ 
+
+        <tr align="center"  id="8">
+
+            <td bgcolor="#5CD1E5">8</td>
+
+            <td></td>
+
+            <td></td>
+
+            <td></td>
+
+            <td ></td>
+
+            <td></td>
+
+        </tr>
+
+ 
+
+        <tr align="center">
+
+            <td></td>
+
+            <td colspan="5" bgcolor="#5CD1E5">University<br>
+
+               NAME
+
+            </td>
+
+        </tr>
+
+    </table>
+
+</body>
+
+
 </html>
