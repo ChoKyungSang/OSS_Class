@@ -5,14 +5,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Schedule
 from django.utils import timezone
-# def index(request):
-#     schedules = Schedule.objects.all()
-#     print(schedules)
-#     str = ''
-#     sc = str(schedules)
-#     #str += schedules
-    
-#     return HttpResponse(str)
+
 
 def post_list(request):
     schedules = Schedule.objects.all()

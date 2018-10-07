@@ -7,6 +7,7 @@ class Schedule(models.Model):
     name = models.CharField(max_length=20)
     division = models.IntegerField(default=1)
     locate = models.CharField(max_length=30)
+    day = models.CharField(max_length=1)
     time = models.CharField(max_length=30)
     prof = models.CharField(max_length=15)
     
