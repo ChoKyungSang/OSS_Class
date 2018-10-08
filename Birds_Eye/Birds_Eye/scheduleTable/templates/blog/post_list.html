@@ -1,224 +1,491 @@
 <!DOCTYPE html>
-<html><head>
+<html>
+    <div>
+        
+<table cellpadding="2" cellspacing="1" border="0" width="98%">
+    <tbody><tr>
+         <caption>
 
-<meta charset="UTF-8">
-
-<title>Bird Eye Schedule</title>
-
-</head>
-
-<body>
-
-    <table cellspacing="5" align="center" border="1" bordercolor="#5CD1E5"
-
-        width="550" height="600">
-
-        <p></p>
-
-        <caption>
-
-            <font size="5" face="굴림">Time Table</font>
+            <font size="5" face="굴림"color="orange">Time Table</font>
 
             </font>
 
         </caption>
+	  <td width="100%">
+    <table class="table_bg" cellpadding="0" cellspacing="10" border="1"  bordercolor="red"width="100%">
+        <tbody><tr class="table_header_center">
+            <td colspan="2" width="10%" bgcolor="#5CD1E5" >??</td>
+            <td colspan="2" bgcolor="#5CD1E5" align="center">월</td>
+            <td colspan="2" bgcolor="#5CD1E5" align="center">화</td>
+            <td colspan="2" bgcolor="#5CD1E5" align="center">수</td>
+            <td colspan="2" bgcolor="#5CD1E5" align="center">목</td>
+            <td colspan="2" bgcolor="#5CD1E5" align="center">금</td>
+        </tr>
 
-        <tr align="center">
+<!-- 0교시 -->
 
-            <td width="50"></td>
+        <tr>
+            <td style="display:none">&nbsp;</td>
+            <td class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;0<br>08:00~<br>08:50</td>
+            <td class="table_bg_white_8">&nbsp;</td>
 
-            <td width="100" bgcolor="#5CD1E5">월</td>
 
-            <td width="100" bgcolor="#5CD1E5">화</td>
+            <td width="8%" class="table_bg_white_8">&nbsp;1</td>
+            <td width="8%" class="table_bg_white_8">&nbsp;2</td>
 
-            <td width="100" bgcolor="#5CD1E5">수</td>
 
-            <td width="100" bgcolor="#5CD1E5">목</td>
+            <td width="8%" class="table_bg_white_8">&nbsp;3</td>
+            <td width="8%" class="table_bg_white_8">&nbsp;4</td>
 
-            <td width="100" bgcolor="#5CD1E5">금</td>
+
+            <td width="8%" class="table_bg_white_8">&nbsp;5</td>
+            <td width="8%" class="table_bg_white_8">&nbsp;6</td>
+
+
+            <td width="8%" class="table_bg_white_8">&nbsp;7</td>
+            <td width="8%" class="table_bg_white_8">&nbsp;8</td>
+
+
+            <td width="8%" class="table_bg_white_8">&nbsp;9</td>
+            <td width="8%" class="table_bg_white_8">&nbsp;10</td>
+
+
+		
+		</tr>
+
+
+<!-- 1교시 ~ 9교시 -->
+
+        <tr>
+            <td style="display:none">&nbsp;</td>
+            <td rowspan="2" class="table_bg_white_8"bgcolor="#5CD1E5" align="center">&nbsp;1<br>09:00~<br>09:50</td>
+            <td rowspan="3" class="table_bg_white_8"bgcolor="orange" align="center">&nbsp;A<br>09:00~<br>10:15</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;13</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8">&nbsp;14</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;15</td>
+            <td rowspan="3" width="8%" class="table_bg_white_9">&nbsp;16</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;17</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8">&nbsp;18</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;19</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8">&nbsp;20</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;21</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8">&nbsp;22</td>
+
+
+
 
         </tr>
 
- 
+        <tr><td style="display:none">&nbsp;</td></tr>
 
-        <tr align="center"  id="1">
-            <td bgcolor="#5CD1E5">
-                <td>z</td>
-            </td>
+        <tr>
+           <td style="display:none">&nbsp;</td>
+           <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;2<br>10:00~<br>10:50</td>
 
-            <td id="1m" >z</td>
+            <td rowspan="2" class="table_bg_white_8">25</td>
 
-            <td ></td>
+            <td rowspan="2" class="table_bg_white_8">26</td>
 
-            <td></td>
+            <td rowspan="2" class="table_bg_white_8">27</td>
 
-            <td></td>
+            <td rowspan="2" class="table_bg_white_8">28</td>
 
-            <td></td>
+            <td rowspan="2" class="table_bg_white_8">29</td>
 
-        </tr>
-                    {%for schedule in schedules%}
-                        
-                <script>
-                    function setHTML(id,html){
-                        obj = document.getElementById(id);
-                              /*if (obj == null) {
-                                      alert(id + ' 찾기 오류');
-                                      return;
-                                  }*/
-                        console.log(obj.innerHTML)
-                        obj.innerHTML = html;
 
-                    }
-                   setHTML("1m","{{schedule.name}}")
-                    
-     
-                  </script>
-                {%endfor%}
-
-       
-
-        <tr align="center"  id="2">
-
-            <td bgcolor="#5CD1E5">2</td>
-
-            <td></td>
-
-            <td></td>
-
-            <td></td>
-
-            <td></td>
-
-            <td></td>
 
         </tr>
 
- 
+        <tr>
+           <td style="display:none">&nbsp;</td>
+           <td rowspan="3" class="table_bg_white_8" bgcolor="orange" align="center">&nbsp;B<br>10:30~<br>11:45</td>
 
-        <tr align="center"  id="3">
+            <td rowspan="3" class="table_bg_white_9">&nbsp;31</td>
 
-            <td bgcolor="#5CD1E5">3</td>
+            <td rowspan="3" class="table_bg_white_9">&nbsp;32</td>
 
-            <td ></td>
+            <td rowspan="3" class="table_bg_white_9">&nbsp;33</td>
 
-            <td></td>
+            <td rowspan="3" class="table_bg_white_9">&nbsp;34</td>
 
-            <td></td>
+            <td rowspan="3" class="table_bg_white_8">&nbsp;35</td>
 
-            <td></td>
 
-            <td></td>
-
-        </tr>
-
- 
-
-        <tr align="center"  id="4">
-
-            <td bgcolor="#5CD1E5">4</td>
-
-            <td></td>
-
-            <td></td>
-
-            <td></td>
-
-            <td ></td>
-
-            <td ></td>
 
         </tr>
 
- 
+        <tr>
+            <td style="display:none">&nbsp;</td>
+            <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;3<br>11:00~<br>11:50</td>
 
-        <tr align="center"  id="5">
+            <td rowspan="2" class="table_bg_white_8">&nbsp;37</td>
 
-            <td bgcolor="#5CD1E5">5</td>
+            <td rowspan="2" class="table_bg_white_8">&nbsp;38</td>
 
-            <td></td>
+            <td rowspan="2" class="table_bg_white_8">&nbsp;39</td>
 
-            <td></td>
+            <td rowspan="2" class="table_bg_white_8">&nbsp;40</td>
 
-            <td></td>
+            <td rowspan="2" class="table_bg_white_8">&nbsp;41</td>
 
-            <td></td>
 
-            <td></td>
+
+        </tr>
+        <tr><td style="display:none">&nbsp;</td></tr>
+
+        <tr>
+            <td style="display:none">&nbsp;</td>
+            <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;4<br>12:00~<br>12:50</td>
+            <td rowspan="3" class="table_bg_white_8" bgcolor="orange" align="center">&nbsp;C<br>12:00~<br>13:15</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;43</td>
+            <td rowspan="3" width="8%" class="table_bg_white_9">&nbsp;44</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;45</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8">&nbsp;46</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;47</td>
+            <td rowspan="3" width="8%" class="table_bg_white_9">&nbsp;48</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;49</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8">&nbsp;50</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;51</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8">&nbsp;52</td>
+
+
+
 
         </tr>
 
- 
+        <tr><td style="display:none">&nbsp;</td></tr>
 
-        <tr align="center"  id="6">
+        <tr>
+           <td style="display:none">&nbsp;</td>
+           <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;5<br>13:00~<br>13:50</td>
 
-            <td bgcolor="#5CD1E5">6</td>
+            <td rowspan="2" class="table_bg_white_8">56</td>
 
-            <td></td>
+            <td rowspan="2" class="table_bg_white_9">57</td>
 
-            <td></td>
+            <td rowspan="2" class="table_bg_white_8">58</td>
 
-            <td></td>
+            <td rowspan="2" class="table_bg_white_9">59</td>
 
-            <td></td>
+            <td rowspan="2" class="table_bg_white_8">60</td>
 
-            <td></td>
 
-        </tr>
-
- 
-
-        <tr align="center"  id="7">
-
-            <td bgcolor="#5CD1E5">7</td>
-
-            <td></td>
-
-            <td></td>
-            
-            <td></td>
-
-            <td></td>
-
-            <td></td>
 
         </tr>
 
- 
+        <tr>
+           <td style="display:none">&nbsp;</td>
+           <td rowspan="3" class="table_bg_white_8" bgcolor="orange" align="center">&nbsp;D<br>13:30~<br>14:45</td>
 
-        <tr align="center"  id="8">
+            <td rowspan="3" class="table_bg_white_8">&nbsp;62</td>
 
-            <td bgcolor="#5CD1E5">8</td>
+            <td rowspan="3" class="table_bg_white_8">&nbsp;63</td>
 
-            <td></td>
+            <td rowspan="3" class="table_bg_white_8">&nbsp;64</td>
 
-            <td></td>
+            <td rowspan="3" class="table_bg_white_8">&nbsp;65</td>
 
-            <td></td>
+            <td rowspan="3" class="table_bg_white_8">&nbsp;66</td>
 
-            <td ></td>
 
-            <td></td>
-
-        </tr>
-
- 
-
-        <tr align="center">
-
-            <td></td>
-
-            <td colspan="5" bgcolor="#5CD1E5">University<br>
-
-               NAME
-
-            </td>
 
         </tr>
 
-    </table>
+        <tr>
+            <td style="display:none">&nbsp;</td>
+            <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;6<br>14:00~<br>14:50</td>
 
-</body>
+            <td rowspan="2" class="table_bg_white_8">&nbsp;68</td>
+
+            <td rowspan="2" class="table_bg_white_9">&nbsp;69</td>
+
+            <td rowspan="2" class="table_bg_white_8">&nbsp;70</td>
+
+            <td rowspan="2" class="table_bg_white_9">&nbsp;71</td>
+
+            <td rowspan="2" class="table_bg_white_8">&nbsp;72</td>
 
 
+
+        </tr>
+        <tr><td style="display:none">&nbsp;</td></tr>
+
+        <tr>
+            <td style="display:none">&nbsp;</td>
+            <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;7<br>15:00~<br>15:50</td>
+            <td rowspan="3" class="table_bg_white_8" bgcolor="orange" align="center">&nbsp;E<br>15:00~<br>16:15</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;74</td>
+            <td rowspan="3" width="8%" class="table_bg_white_9">&nbsp;75</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;76</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8">&nbsp;77</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;78</td>
+            <td rowspan="3" width="8%" class="table_bg_white_9">&nbsp;79</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;80</td>
+            <td rowspan="3" width="8%" class="table_bg_white_9">&nbsp;81</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;82</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8">&nbsp;83</td>
+
+
+
+
+        </tr>
+
+        <tr><td style="display:none">&nbsp;</td></tr>
+
+        <tr>
+           <td style="display:none">&nbsp;</td>
+           <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;8<br>16:00~<br>16:50</td>
+
+            <td rowspan="2" class="table_bg_white_8">86</td>
+
+            <td rowspan="2" class="table_bg_white_8">87</td>
+
+            <td rowspan="2" class="table_bg_white_8">88</td>
+
+            <td rowspan="2" class="table_bg_white_8">89</td>
+
+            <td rowspan="2" class="table_bg_white_8">90</td>
+
+
+
+        </tr>
+
+        <tr>
+           <td style="display:none">&nbsp;</td>
+           <td rowspan="3" class="table_bg_white_8" bgcolor="orange" align="center">&nbsp;F<br>16:30~<br>17:45</td>
+
+            <td rowspan="3" class="table_bg_white_8">&nbsp;92</td>
+
+            <td rowspan="3" class="table_bg_white_8">&nbsp;93</td>
+
+            <td rowspan="3" class="table_bg_white_8">&nbsp;94</td>
+
+            <td rowspan="3" class="table_bg_white_8">&nbsp;95</td>
+
+            <td rowspan="3" class="table_bg_white_8">&nbsp;96</td>
+
+
+
+        </tr>
+
+        <tr>
+            <td style="display:none">&nbsp;</td>
+            <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;9<br>17:00~<br>17:50</td>
+
+            <td rowspan="2" class="table_bg_white_8">&nbsp;98</td>
+
+            <td rowspan="2" class="table_bg_white_8">&nbsp;99</td>
+
+            <td rowspan="2" class="table_bg_white_8">&nbsp;100</td>
+
+            <td rowspan="2" class="table_bg_white_8">&nbsp;101</td>
+
+            <td rowspan="2" class="table_bg_white_8">&nbsp;102</td>
+
+
+        </tr>
+        <tr><td style="display:none">&nbsp;</td></tr>
+
+        <tr>
+            <td style="display:none">&nbsp;</td>
+            <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;10<br>18:00~<br>18:50</td>
+            <td rowspan="3" class="table_bg_white_8" bgcolor="orange" align="center">&nbsp;G<br>18:00~<br>19:15</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;104</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8">&nbsp;105</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;106</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8">&nbsp;107</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;108</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8">&nbsp;109</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;110</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8">&nbsp;111</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;112</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8">&nbsp;113</td>
+
+
+
+
+        </tr>
+
+        <tr><td style="display:none">&nbsp;</td></tr>
+
+        <tr>
+           <td style="display:none">&nbsp;</td>
+           <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;11<br>18:55~<br>19:45</td>
+
+            <td rowspan="2" class="table_bg_white_8">116</td>
+
+            <td rowspan="2" class="table_bg_white_8">117</td>
+
+            <td rowspan="2" class="table_bg_white_8">118</td>
+
+            <td rowspan="2" class="table_bg_white_8">119</td>
+
+            <td rowspan="2" class="table_bg_white_8">120</td>
+
+
+
+        </tr>
+
+        <tr>
+           <td style="display:none">&nbsp;</td>
+           <td rowspan="3" class="table_bg_white_8" bgcolor="orange" align="center">&nbsp;H<br>19:25~<br>20:40</td>
+
+            <td rowspan="3" class="table_bg_white_8">&nbsp;122</td>
+
+            <td rowspan="3" class="table_bg_white_8">&nbsp;123</td>
+
+            <td rowspan="3" class="table_bg_white_8">&nbsp;124</td>
+
+            <td rowspan="3" class="table_bg_white_8">&nbsp;125</td>
+
+            <td rowspan="3" class="table_bg_white_8">&nbsp;126</td>
+        </tr>
+
+        <tr>
+            <td style="display:none">&nbsp;</td>
+            <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;12<br>19:50~<br>20:40</td>
+
+            <td rowspan="2" class="table_bg_white_8">&nbsp;128</td>
+
+            <td rowspan="2" class="table_bg_white_8">&nbsp;129</td>
+
+            <td rowspan="2" class="table_bg_white_8">&nbsp;130</td>
+
+            <td rowspan="2" class="table_bg_white_8">&nbsp;131</td>
+
+            <td rowspan="2" class="table_bg_white_8">&nbsp;132</td>
+
+
+
+        </tr>
+        <tr><td style="display:none">&nbsp;</td></tr>
+
+
+
+
+<!-- 13교시 ~ 14교시 -->
+
+ <tr>
+            <td style="display:none">&nbsp;</td>
+            <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;13<br>20:45~<br>21:35</td>
+            <td rowspan="3" class="table_bg_white_8" bgcolor="orange" align="center">&nbsp;I<br>20:50~<br>22:05</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;134</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8">&nbsp;135</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;136</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8">&nbsp;137</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;138</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8">&nbsp;139</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;140</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8">&nbsp;141</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8">&nbsp;142</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8">&nbsp;143</td>
+
+
+
+
+        </tr>
+
+        <tr><td style="display:none">&nbsp;</td></tr>
+
+        <tr>
+           <td style="display:none">&nbsp;</td>
+           <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;14<br>21:40~<br>22:30</td>
+
+            <td rowspan="2" class="table_bg_white_8">146</td>
+
+            <td rowspan="2" class="table_bg_white_8">147</td>
+
+            <td rowspan="2" class="table_bg_white_8">148</td>
+
+            <td rowspan="2" class="table_bg_white_8">149</td>
+
+            <td rowspan="2" class="table_bg_white_8">150</td>
+
+
+
+        </tr>
+        <tr class="table_bg_white_8">
+            <td style="display:none">&nbsp;</td>
+            <td class="table_bg_white_8"></td>
+
+
+            <td width="8%" class="table_bg_white_8">&nbsp;</td>
+
+
+            <td width="8%" class="table_bg_white_8">&nbsp;</td>
+
+
+            <td width="8%" class="table_bg_white_8">&nbsp;</td>
+
+
+            <td width="8%" class="table_bg_white_8">&nbsp;</td>
+
+
+            <td width="8%" class="table_bg_white_8">&nbsp;</td>
+
+
+
+
+        </tr>
+
+
+
+    </tbody></table>
+	</td>
+	</tr>
+	</tbody></table>
+        </div>
+    <div>
+        달ㄹ력
+    </div>
 </html>
