@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css"?ver=1>
+    table{
+        border-collapse : collapse
+    }
+    
+    th, td {
+    border: 3px solid #000080;
+    font-size : 7px;
+    font-weight : bold;
+
+    }
+    
+    .left{
+    border-left: 7px solid #000080;
+    }
+
+}
+    
+
+    
+</style>
+    <div>
+        
+<table id="maintable" cellpadding="2" width="950px" >
+    <tbody><tr>
+         <caption>
+            <font size="5" face="굴림"color="orange">Time Table</font>
+
+            </font>
+
+        </caption>
+	  <td width="100%">
+    <table class="table_bg" border="1"  width="100%">
+        <tbody><tr class="table_header_center">
+            <td colspan="2" width="10%" bgcolor="#5CD1E5" ></td>
+            <td colspan="2" bgcolor="#5CD1E5" align="center" class="left">월</td>
+            <td colspan="2" bgcolor="#5CD1E5" align="center" class="left">화</td>
+            <td colspan="2" bgcolor="#5CD1E5" align="center" class="left">수</td>
+            <td colspan="2" bgcolor="#5CD1E5" align="center" class="left">목</td>
+            <td colspan="2" bgcolor="#5CD1E5" align="center" class="left">금</td>
+        </tr>
+
+<!-- 0교시 -->
+
+        <!-- <tr>
+            <td style="display:none">&nbsp;</td>
+            <td class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;0<br>08:00~<br>08:50</td>
+            <td class="table_bg_white_8" bgcolor="orange" >&nbsp;</td>
+
+
+            <td width="8%" class="table_bg_white_8 left"  >&nbsp;</td>
+            <td width="8%" class="table_bg_white_8">&nbsp;</td>
+
+
+            <td width="8%" class="table_bg_white_8 left">&nbsp;</td>
+            <td width="8%" class="table_bg_white_8">&nbsp;</td>
+
+
+            <td width="8%" class="table_bg_white_8 left">&nbsp;</td>
+            <td width="8%" class="table_bg_white_8">&nbsp;</td>
+
+
+            <td width="8%" class="table_bg_white_8 left">&nbsp;</td>
+            <td width="8%" class="table_bg_white_8">&nbsp;</td>
+
+
+            <td width="8%" class="table_bg_white_8 left">&nbsp;</td>
+            <td width="8%" class="table_bg_white_8">&nbsp;</td>
+
+
+		
+        </tr> -->
+
+
+<!-- 1교시 ~ 9교시 -->
+
+        <tr>
+            <td style="display:none">&nbsp;</td>
+            <td rowspan="2" class="table_bg_white_8"bgcolor="#5CD1E5" align="center">&nbsp;1<br>09:00~<br>09:50</td>
+            <td rowspan="3" class="table_bg_white_8"bgcolor="orange" align="center">&nbsp;A<br>09:00~<br>10:15</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="1-1">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8" id="1-A">&nbsp;</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="2-1">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_9" id="2-A">&nbsp;</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="3-1">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8" id="3-A">&nbsp;</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="4-1">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8" id="4-A">&nbsp;</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="5-1">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8" id="5-A">&nbsp;</td>
+
+
+
+
+        </tr>
+
+        <tr><td style="display:none">&nbsp;</td></tr>
+
+        <tr>
+           <td style="display:none">&nbsp;</td>
+           <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;2<br>10:00~<br>10:50</td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="1-2"></td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="2-2"></td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="3-2"></td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="4-2"></td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="5-2"></td>
+
+
+
+        </tr>
+
+        <tr>
+           <td style="display:none">&nbsp;</td>
+           <td rowspan="3" class="table_bg_white_8" bgcolor="orange" align="center">&nbsp;B<br>10:30~<br>11:45</td>
+
+            <td rowspan="3" class="table_bg_white_9" id="1-B">&nbsp;</td>
+
+            <td rowspan="3" class="table_bg_white_9" id="2-B">&nbsp;</td>
+
+            <td rowspan="3" class="table_bg_white_9" id="3-B">&nbsp;</td>
+
+            <td rowspan="3" class="table_bg_white_9" id="4-B">&nbsp;</td>
+
+            <td rowspan="3" class="table_bg_white_8" id="5-B">&nbsp;</td>
+
+
+
+        </tr>
+
+        <tr>
+            <td style="display:none">&nbsp;</td>
+            <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;3<br>11:00~<br>11:50</td>
+
+            <td rowspan="2" class="table_bg_white_8 left"id="1-3">&nbsp;</td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="2-3">&nbsp;</td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="3-3">&nbsp;</td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="4-3">&nbsp;</td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="5-3">&nbsp;</td>
+
+
+
+        </tr>
+        <tr><td style="display:none">&nbsp;</td></tr>
+
+        <tr>
+            <td style="display:none">&nbsp;</td>
+            <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;4<br>12:00~<br>12:50</td>
+            <td rowspan="3" class="table_bg_white_8" bgcolor="orange" align="center">&nbsp;C<br>12:00~<br>13:15</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left"id="1-4">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_9" id="1-C">&nbsp;</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="2-4">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8" id="2-C">&nbsp;</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="3-4">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_9" id="3-C">&nbsp;</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="4-4">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8" id="4-C">&nbsp;</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="5-4">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8" id="5-C">&nbsp;</td>
+
+
+
+
+        </tr>
+
+        <tr><td style="display:none">&nbsp;</td></tr>
+
+        <tr>
+           <td style="display:none">&nbsp;</td>
+           <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;5<br>13:00~<br>13:50</td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="1-5"></td>
+
+            <td rowspan="2" class="table_bg_white_9 left" id="2-5"></td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="3-5"></td>
+
+            <td rowspan="2" class="table_bg_white_9 left" id="4-5"></td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="5-5"></td>
+
+
+
+        </tr>
+
+        <tr>
+           <td style="display:none">&nbsp;</td>
+           <td rowspan="3" class="table_bg_white_8" bgcolor="orange" align="center">&nbsp;D<br>13:30~<br>14:45</td>
+
+            <td rowspan="3" class="table_bg_white_8" id="1-D">&nbsp;</td>
+
+            <td rowspan="3" class="table_bg_white_8" id="2-D">&nbsp;</td>
+
+            <td rowspan="3" class="table_bg_white_8" id="3-D">&nbsp;</td>
+
+            <td rowspan="3" class="table_bg_white_8" id="4-D">&nbsp;</td>
+
+            <td rowspan="3" class="table_bg_white_8" id="5-D">&nbsp;</td>
+
+
+
+        </tr>
+
+        <tr>
+            <td style="display:none">&nbsp;</td>
+            <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;6<br>14:00~<br>14:50</td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="1-6">&nbsp;</td>
+
+            <td rowspan="2" class="table_bg_white_9 left" id="2-6">&nbsp;</td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="3-6">&nbsp;</td>
+
+            <td rowspan="2" class="table_bg_white_9 left" id="4-6">&nbsp;</td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="5-6">&nbsp;</td>
+
+
+
+        </tr>
+        <tr><td style="display:none">&nbsp;</td></tr>
+
+        <tr>
+            <td style="display:none">&nbsp;</td>
+            <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;7<br>15:00~<br>15:50</td>
+            <td rowspan="3" class="table_bg_white_8" bgcolor="orange" align="center">&nbsp;E<br>15:00~<br>16:15</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="1-7">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_9" id="1-E">&nbsp;</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="2-7">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8" id="2-E">&nbsp;</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="3-7">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_9" id="3-E">&nbsp;</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="4-7">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_9" id="4-E">&nbsp;</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="5-7">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8" id="5-E">&nbsp;</td>
+
+
+
+
+        </tr>
+
+        <tr><td style="display:none">&nbsp;</td></tr>
+
+        <tr>
+           <td style="display:none">&nbsp;</td>
+           <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;8<br>16:00~<br>16:50</td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="1-8"></td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="2-8"></td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="3-8"></td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="4-8"></td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="5-8"></td>
+
+
+
+        </tr>
+
+        <tr>
+           <td style="display:none">&nbsp;</td>
+           <td rowspan="3" class="table_bg_white_8" bgcolor="orange" align="center">&nbsp;F<br>16:30~<br>17:45</td>
+
+            <td rowspan="3" class="table_bg_white_8" id="1-F">&nbsp;</td>
+
+            <td rowspan="3" class="table_bg_white_8" id="2-F">&nbsp;</td>
+
+            <td rowspan="3" class="table_bg_white_8" id="3-F">&nbsp;</td>
+
+            <td rowspan="3" class="table_bg_white_8" id="4-F">&nbsp;</td>
+
+            <td rowspan="3" class="table_bg_white_8" id="5-F">&nbsp;</td>
+
+
+
+        </tr>
+
+        <tr>
+            <td style="display:none">&nbsp;</td>
+            <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;9<br>17:00~<br>17:50</td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="1-9">&nbsp;</td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="2-9">&nbsp;</td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="3-9">&nbsp;</td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="4-9">&nbsp;</td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="5-9">&nbsp;</td>
+
+
+        </tr>
+        <tr><td style="display:none">&nbsp;</td></tr>
+
+        <tr>
+            <td style="display:none">&nbsp;</td>
+            <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;10<br>18:00~<br>18:50</td>
+            <td rowspan="3" class="table_bg_white_8" bgcolor="orange" align="center">&nbsp;G<br>18:00~<br>19:15</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="1-10">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8" id="1-G">&nbsp;</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="2-10">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8" id="2-G">&nbsp;</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="3-10">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8" id="3-G">&nbsp;</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="4-10">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8" id="4-G">&nbsp;</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="5-10">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8" id="5-G">&nbsp;</td>
+
+
+
+
+        </tr>
+
+        <tr><td style="display:none">&nbsp;</td></tr>
+
+        <tr>
+           <td style="display:none">&nbsp;</td>
+           <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;11<br>18:55~<br>19:45</td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="1-11"></td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="2-11"></td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="3-11"></td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="4-11"></td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="5-11"></td>
+
+
+
+        </tr>
+
+        <tr>
+           <td style="display:none">&nbsp;</td>
+           <td rowspan="3" class="table_bg_white_8" bgcolor="orange" align="center">&nbsp;H<br>19:25~<br>20:40</td>
+
+            <td rowspan="3" class="table_bg_white_8" id="1-H">&nbsp;</td>
+
+            <td rowspan="3" class="table_bg_white_8" id="2-H">&nbsp;</td>
+
+            <td rowspan="3" class="table_bg_white_8" id="3-H">&nbsp;</td>
+
+            <td rowspan="3" class="table_bg_white_8" id="4-H">&nbsp;</td>
+
+            <td rowspan="3" class="table_bg_white_8" id="5-H">&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td style="display:none">&nbsp;</td>
+            <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;12<br>19:50~<br>20:40</td>
+
+            <td rowspan="2" class="table_bg_white_8" id="1-12">&nbsp;</td>
+
+            <td rowspan="2" class="table_bg_white_8" id="2-12">&nbsp;</td>
+
+            <td rowspan="2" class="table_bg_white_8" id="3-12">&nbsp;</td>
+
+            <td rowspan="2" class="table_bg_white_8" id="4-12">&nbsp;</td>
+
+            <td rowspan="2" class="table_bg_white_8" id="5-12">&nbsp;</td>
+
+
+
+        </tr>
+        <tr><td style="display:none">&nbsp;</td></tr>
+
+
+
+
+<!-- 13교시 ~ 14교시 -->
+
+ <tr>
+            <td style="display:none">&nbsp;</td>
+            <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;13<br>20:45~<br>21:35</td>
+            <td rowspan="3" class="table_bg_white_8" bgcolor="orange" align="center">&nbsp;I<br>20:50~<br>22:05</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="1-13">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8" id="1-I">&nbsp;</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="2-13">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8" id="2-I">&nbsp;</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="3-13">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8" id="3-I">&nbsp;</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="4-13">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8" id="4-I">&nbsp;</td>
+
+
+            <td rowspan="2" width="8%" class="table_bg_white_8 left" id="5-13">&nbsp;</td>
+            <td rowspan="3" width="8%" class="table_bg_white_8" id="5-I">&nbsp;</td>
+
+
+
+
+        </tr>
+
+        <tr><td style="display:none">&nbsp;</td></tr>
+
+        <tr>
+           <td style="display:none">&nbsp;</td>
+           <td rowspan="2" class="table_bg_white_8" bgcolor="#5CD1E5" align="center">&nbsp;14<br>21:40~<br>22:30</td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="1-14"></td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="2-14"></td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="3-14"></td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="4-14"></td>
+
+            <td rowspan="2" class="table_bg_white_8 left" id="5-14"></td>
+
+
+
+        </tr>
+        <tr class="table_bg_white_8">
+            <td style="display:none">&nbsp;</td>
+            <td class="table_bg_white_8" bgcolor="orange"></td>
+
+
+            <td width="8%" class="table_bg_white_8">&nbsp;</td>
+
+
+            <td width="8%" class="table_bg_white_8">&nbsp;</td>
+
+
+            <td width="8%" class="table_bg_white_8">&nbsp;</td>
+
+
+            <td width="8%" class="table_bg_white_8">&nbsp;</td>
+
+
+            <td width="8%" class="table_bg_white_8">&nbsp;</td>
+
+
+
+
+        </tr>
+{%for schedule in schedules%}
+            <script>
+                
+                function randomItem(a) {
+                  return a[Math.floor(Math.random() * a.length)];
+                }
+                
+                var colorList = new Array('seashell','papayawhip','lightyellow','lavenderblush','lightcyan','thistle','palegreen','azure','lavender')
+                color1 = randomItem(colorList)
+
+                
+                console.log("{{schedule.day}}"+"-"+"{{schedule.time}}")
+                var timeConvAry = ["1,2","2,3","3,4","4,5","5,6","6,7","7,8","8,9","9,10","10,11","11,12","12,13","13,14","A","B","C","D","E","F","G","H","I"]
+                var times = ["{{schedule.time}}" , "{{schedule.time2}}"] 
+                var days = ["{{schedule.day}}","{{schedule.day2}}"]
+                color = "#5CD1E5" /*시간이 1~14에 해당하는 시간일때의 색깔 */
+                /*if("{{schedule.time}}" == 404){
+                    "Error Exception"
+                }*/
+                
+                for (i in days){
+
+                    if (days[i] != 6){
+                        console.log(days[i])
+                        time = times[i]
+                        
+                        if (time == 37)/*time2값중 time1과 같음 의 경우*/
+                            time = ft
+                        
+                        if (time>= 28){ /*시간이 A~I에 해당하는 시간일때 오렌지색으로 바꿔줌 */
+                            color="orange"
+                            }
+                        
+                        if (time >= 15)  {
+                            time = timeConvAry[times[i]-15]
+                                }
+                        
+                        console.log("time : " , time)
+                        var timekey = time.split(",");
+                        
+
+                        for (t of timekey){
+                            key = days[i] +"-" + t
+                            context =  "{{schedule.name}} "+ "<br>"+"{{schedule.locate}}"+"<br>"+"{{schedule.prof}} " 
+                            document.getElementById(key).innerHTML = context
+                            document.getElementById(key).setAttribute("bgcolor",color1)
+
+                        }
+                        if (time != 37)/* time2값이 time1과 같음 일떄의 대비하여 time1의 값을 저장하는 ft변수 만들기 위한 if*/
+                            ft = time
+            
+                    }
+                }
+
+                
+
+            </script>
+{%endfor%}
+            
+
+
+    </tbody></table>
+	</td>
+	</tr>
+	</tbody></table>
+        </div>
+    <div>
+        
+    </div>
+</html>
